@@ -1,0 +1,8 @@
+numpy
+matplotlib
+seaborn
+scipy
+tqdm
+opencv-python
+pandas
+lpips

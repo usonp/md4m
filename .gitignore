@@ -1,0 +1,11 @@
+*/__pycache__
+
+monoDepth/DA_checkpoints
+monoDepth/depth_anything_v2
+monoDepth/depth_anything_v2_metric
+
+calibration/Software/OpenMVG/openMVG_main_ConvertSfM_DataFormat
+calibration/Software/OpenMVG/openMVG_main_SfM
+calibration/Software/OpenMVG/openMVG_main_SfMInit_ImageListing
+
+metrics/metrics_table.tex
