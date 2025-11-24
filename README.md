@@ -12,13 +12,13 @@ Estimation accurate for Multi-Camera Setups?](https://doi.org/10.1109/icct-europ
 
 ## Overview
 
-This repository proveides tools to perform the following tasks:
+This repository provides tools to perform the following tasks:
 
-- (Optional) Intrinsic camera calibration and image distorion correction (see [monoDepth](monoDepth/README.md))
-- Monocular Depth estimation using Deep Learning Models (see [monoDepth](monoDepth/README.md))
-- Multi-Camera calibration using a calibration pattern and OpenMVS (see [calibration](calibration/README.md))
-- Adjusting the depth estimation to the multicamera calibration for real-time execution (see [calibration](calibration/README.md))
-- Compute objective image metrics using renderings obtained from the RGB+D content (see [metrics](metrics/README.md))
+- (Optional) Intrinsic camera calibration and image distortion correction (see [monoDepth](monoDepth/README.md))
+- Monocular depth estimation using deep learning models (see [monoDepth](monoDepth/README.md))
+- Multi-camera calibration using a calibration pattern and OpenMVG (see [calibration](calibration/README.md))
+- Adjusting the depth estimation to the multi-camera calibration for real-time execution (see [calibration](calibration/README.md))
+- Computing objective image metrics using renderings obtained from the RGB+D content (see [metrics](metrics/README.md))
 
 ## Getting things ready
 
@@ -34,7 +34,7 @@ Metrics also have specific requirements:
 
     pip install -r metrics/requirements.txt
 
-Calibration tasks are taken care by [OpenMVG](https://github.com/openMVG/openMVG.git), follow the official instructions to compile the library and copy the resulting executables to `calibration/Software/OpenMVG`. Note that the software has only been tested in Ubuntu 22.
+Calibration tasks are handled by [OpenMVG](https://github.com/openMVG/openMVG.git). Follow the official instructions to compile the library and copy the resulting executables to `calibration/Software/OpenMVG`. Note that the software has only been tested on Ubuntu 22.
 
 To start processing a sequence with $N$ cameras, the following file structure is recommended:
 
@@ -65,8 +65,8 @@ To start processing a sequence with $N$ cameras, the following file structure is
 
 Where:
 
-- `Checkerboard` are captures of the [OpenCV checkboard calibration pattern](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)
-- `EncodedFiles/RGB` are the captures from the cameras to use to compute depth
+- `Checkerboard` contains captures of the [OpenCV checkerboard calibration pattern](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)
+- `EncodedFiles/RGB` contains the images captured from the cameras used to compute depth
 - `EncodedFiles/Masks` is an optional folder with segmentation masks for each frame of the captures
 
 ## Citation
