@@ -2,12 +2,12 @@
 
 #####################################3
 ## Configure
-CALIBRATION_FOLDER="Sequence/Calibration"
+CALIBRATION_FOLDER="Sequence/Calibration" # Path to calibration folder
 INTRINSIC_JSON="$CALIBRATION_FOLDER/camera_intrinsics.json"
 
 # 1920-1080/1280-720
-WIDTH=1920
-HEIGH=1080
+WIDTH=1280
+HEIGHT=720
 
 # Detecting corners
 num_corners_x=10
@@ -17,11 +17,11 @@ square_size=101.6
 
 # Reconstruction
 load_intrinsics=1
-rectified_images=0
+rectified_images=1
 # GLOBAL/INCREMENTAL
 MODE="INCREMENTAL"
 group_camera_model="0"
-f=$((HEIGH * 5 / 4))
+f=$((HEIGHT * 5 / 4))
 
 # FVV export
 num_servers=1
@@ -56,7 +56,7 @@ mkdir -p $SfM_FOLDER
 
 # Generate dummy images required for the SfM file
 echo 'Generating Dummy Images'
-python $SW_FOLDER/generate_dummy_images.py $DETECTEDPOINTS $IMAGE_FOLDER $WIDTH $HEIGH
+python $SW_FOLDER/generate_dummy_images.py $DETECTEDPOINTS $IMAGE_FOLDER $WIDTH $HEIGHT
 
 # Generate base SfM file 
 echo "Executing Image Listing with f=$f"

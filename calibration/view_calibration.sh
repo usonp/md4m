@@ -10,4 +10,4 @@ SW_FOLDER="./Software"
 SfM_FOLDER="$OUT_FOLDER/SfM"
 
 echo "Preparing interactive visualization of calibration"
-python3 $SW_FOLDER/plot_calibration_3D.py $SfM_FOLDER/calibrated_scaled.json
+python $SW_FOLDER/plot_calibration_3D.py $SfM_FOLDER/calibrated_scaled.json
