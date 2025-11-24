@@ -4,11 +4,7 @@ This is the code implementation for the paper 📄 [Is Real-time Deep Learning-b
 Estimation accurate for Multi-Camera Setups?](https://doi.org/10.1109/icct-europe63283.2025.11157669)
 
 
-<div align="center">
-    <video src="assets/demo.mp4" controls width="600">
-        You should be seeing the video assets/demo.mp4.
-    </video>
-</div>
+[![Demo](assets/demo.gif)](assets/demo.mp4)
 
 ## Overview
 
