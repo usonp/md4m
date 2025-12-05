@@ -77,4 +77,7 @@ If you found this software useful, we would really appreciate it if you cite it 
     pages={1-5},
     doi={10.1109/ICCT-Europe63283.2025.11157669}}
 
+## ACKs
+*This work was partially supported by projects PID2020-115132RB (SARAOS) and PID2023-148922OA-I00 (EEVOCATIONS) funded by MCIN/AEI/10.13039/501100011033 of the Spanish Government, HORIZON-IA-1010702-50 (XReco) funded by the European Union, TED2021-131690B-C31 (Revolution) funded by MCIN/AEI/10.13039/501100011033 and by NextGenerationEU/PRTR, and by the project UNICO-5G I+D TSI-063000-2021-80 (DISRADIO–Pilotos) funded by the Ministry of Digital Transformation of the Spanish Government and the NextGenerationEU (RRTP).*
+
 Licensed under the MIT License.
